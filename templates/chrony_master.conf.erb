@@ -2,8 +2,8 @@
 
 # Use public servers from the pool.ntp.org project.
 # Please consider joining the pool (http://www.pool.ntp.org/join.html).
-<% @servers.each do |server, options| %>
-<%= "server #{server} #{options}" %>
+<% @servers.each do |sourse| %>
+<%= "server #{sourse}" %>
 <% end %>
 
 # Record the rate at which the system clock gains/losses time.
