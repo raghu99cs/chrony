@@ -4,8 +4,8 @@
 # Please consider joining the pool (http://www.pool.ntp.org/join.html).
 # See https://chrony.tuxfamily.org/faq.html#_what_is_the_minimum_recommended_configuration_for_an_ntp_client
 # for explanations for these configuration settings
-<% @servers.each do |server, options| %>
-<%= "pool #{server} #{options}" %>
+<% @servers.each do |source| %>
+<%= "pool #{source}" %>
 <% end %>
 
 # Record the rate at which the system clock gains/losses time.
